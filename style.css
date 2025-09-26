@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', monospace; /* estilo gamer */
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(45deg, #6a00f4, #ff0080);
+  color: white;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border: 2px solid #ff0080;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+}
