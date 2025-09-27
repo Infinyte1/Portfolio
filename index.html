@@ -1,46 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio | Infinytz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinyte Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Infinytz 👾</h1>
-    <p>Gamer & Developer – Building games and cool code projects</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a passionate programmer who loves video games, creative coding, and building unique projects.</p>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Infinyte</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <h1>Hi, I'm Brannco 👋</h1>
+    <p>A passionate programmer and gamer building creative projects in web development and beyond. Welcome to my portfolio!</p>
+    <a href="#projects" class="btn">See my projects</a>
   </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-card">
-      <h3>Space Shooter Game</h3>
-      <p>A browser game built with JavaScript and Canvas.</p>
-      <a href="#">View Project</a>
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm an aspiring developer with a love for video games and technology. My goal is to combine creativity and coding to build fun, interactive, and useful projects. Here you'll find my work, skills, and ways to connect with me.</p>
+    <div style="text-align:center;">
+      <a href="#" class="btn">Download CV</a>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 Email: youremail@example.com</p>
-    <p>💻 GitHub: <a href="#">github.com/infinytz</a></p>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A short description of your project goes here.</p>
+        <a href="#" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A short description of your project goes here.</p>
+        <a href="#" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>A short description of your project goes here.</p>
+        <a href="#" class="btn">View on GitHub</a>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Infinytz – All rights reserved</p>
-  </footer>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-icons">
+      <i class="fab fa-html5" title="HTML5"></i>
+      <i class="fab fa-css3-alt" title="CSS3"></i>
+      <i class="fab fa-js-square" title="JavaScript"></i>
+      <i class="fab fa-git-alt" title="Git"></i>
+      <i class="fab fa-github" title="GitHub"></i>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:Zetaroxs@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/Infinyte1" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/infinyte" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Infinyte. Built with ❤️</p>
+  </footer>
 </body>
 </html>
