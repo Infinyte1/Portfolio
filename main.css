@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-/* Actualización forzada para GitHub Pages */
+
 html {
   scroll-behavior: smooth;
 }
@@ -124,7 +124,7 @@ nav ul li a:hover {
 }
 
 section {
-  padding: 6rem 2rem 5rem 2rem; /* Aumenta el padding-top para dejar espacio al nav */
+  padding: 6rem 2rem 5rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
