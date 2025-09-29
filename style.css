@@ -105,8 +105,14 @@ nav ul li a:hover {
 }
 
 .hero p {
-  max-width: 600px;
-  margin-bottom: 2rem;
+  color: #fff;
+  background: rgba(30,30,47,0.7);
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .btn {
@@ -200,34 +206,113 @@ section h2 {
 
 .skills-icons {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  font-size: 2.5rem;
+  gap: 20px;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 20px;
 }
 
 .skills-icons i {
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.skills-icons i:hover {
+.skills-icons i:hover,
+.skills-icons img:hover {
   transform: scale(1.2);
-  color: #00d8ff;
+  color: #00aced;
+}
+
+.skill-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: invert(1);
+  transition: transform 0.3s ease;
 }
 
 
-.contact-links {
+
+.contact {
+  padding: 80px 20px;
   text-align: center;
+  background: #111;
+  color: #fff;
 }
 
-.contact-links a {
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  transition: color 0.3s;
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00c8ff;
 }
 
-.contact-links a:hover {
-  color: #00d8ff;
+.contact p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #ff0066;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ff3399;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  color: #00c8ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #ff0066;
+}
+
+.form-status {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00ffaa;
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 

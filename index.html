@@ -15,6 +15,7 @@
   
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   
@@ -32,7 +33,7 @@
   
   <section class="hero" id="hero">
     <h1>Hi, I'm Brannco 🧣</h1>
-    <p>A passionate programmer and gamer building creative projects in web development and beyond. Welcome to my portfolio!</p>
+    <p>¡Welcome to my portfolio!</p>
     <a href="#projects" class="btn">See my projects</a>
   </section>
 
@@ -78,18 +79,38 @@
       <i class="fab fa-js-square" title="JavaScript"></i>
       <i class="fab fa-git-alt" title="Git"></i>
       <i class="fab fa-github" title="GitHub"></i>
+      <i class="fab fa-unity" title="Unity"></i>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/UE_Logo_Black_Centered.svg" 
+         alt="Unreal Engine" 
+         title="Unreal Engine"
+         class="skill-logo">
+    <i class="fab fa-python" title="Python"></i>
+    <i class="fab fa-node-js" title="Node.js"></i>
     </div>
   </section>
 
   
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-links">
-      <a href="mailto:Zetaroxs@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/Infinyte1" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/infinyte" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </section>
+<section id="contact" class="section contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to collaborate or just say hi, feel free to reach out!</p>
+
+  <form class="contact-form" id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required>
+    <input type="email" name="reply_to" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <p id="form-status"></p>
+</section>
+
+
+  <div class="socials">
+    <a href="https://github.com/Infinyte1" target="_blank">🐙 GitHub</a>
+    <a href="https://www.linkedin.com/in/infinyte" target="_blank">💼 LinkedIn</a>
+    <a href="https://www.twitch.tv/infnytz" target="_blank">🎮 Twitch</a>
+  </div>
+</section>
 
 
   <footer>
@@ -97,5 +118,31 @@
   </footer>
   <script src="Script.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("WDtZPa4UNF1MrNo1z");
+  })();
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_m9xtadr", "template_wymq0d6", this)
+        .then(() => {
+          status.innerHTML = "✅ Message sent successfully!";
+          status.style.color = "lime";
+          form.reset();
+        }, (error) => {
+          status.innerHTML = "❌ Failed to send message. Try again later.";
+          status.style.color = "red";
+          console.error("EmailJS error:", error);
+        });
+    });
+  });
+</script>
 </body>
 </html>
